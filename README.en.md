@@ -1,7 +1,12 @@
-# Send button · a DeepSeek Harness plugin
+# Editable send button · a DeepSeek Harness plugin
+
+English | [简体中文](README.md)
 
 An **editable** one-click send button on the right of the composer. Click it and its text goes out as a normal
 prompt. It defaults to `继续` ("continue").
+
+[![npm](https://img.shields.io/npm/v/dsh-editable-send?color=2F6FED)](https://www.npmjs.com/package/dsh-editable-send)
+[![license](https://img.shields.io/npm/l/dsh-editable-send)](LICENSE)
 
 ![The 继续 button in the composer's bottom-right tool row](docs/images/composer.png)
 
@@ -20,7 +25,7 @@ It saves the "type 继续, press Enter" round trip — and the text is yours to 
 
 ![Editing the text in place](docs/images/edit.png)
 
-- The text is stored in browser `localStorage` (key `dsh-continue-button:text`); it survives reloads.
+- The text is stored in browser `localStorage` (key `dsh-editable-send:text`); it survives reloads.
 - The default follows the UI language: `继续` for Chinese, `Continue` for English. Once edited it is no longer
   re-seeded.
 - 120 characters max; longer text is ellipsised in the button and kept whole in its `title`.
@@ -47,10 +52,19 @@ After the click the conversation holds exactly that message — whatever the but
 
 ## Install
 
-**From the plugin market**: DSH sidebar → **Plugins** → **Discover** → find "发送按钮" → install → enable.
+Published on npm as `dsh-editable-send@1.0.0`. Pick one:
 
-**From a local directory** (development): Plugins → Add plugin → paste the absolute directory path → install →
-enable. Then **refresh the page once** (the browser half is plain JS, no build step). After upgrading, restart DSH.
+```powershell
+# 1) install the npm package (recommended)
+plugin_manager install_bundle --target dsh-editable-send
+
+# 2) search "发送按钮" in the plugin market
+
+# 3) link a local checkout if you want to modify the code (hot-reloads on save)
+plugin_manager install_bundle --target <absolute path to this repo>
+```
+
+Then **refresh the page once** (the browser half is plain JS, no build step). After upgrading, restart DSH.
 
 ## Screenshot
 
@@ -87,7 +101,3 @@ enable. Then **refresh the page once** (the browser half is plain JS, no build s
 ## License
 
 [MIT](LICENSE)
-
----
-
-[中文](README.md)

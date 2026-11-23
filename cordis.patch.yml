@@ -4,6 +4,6 @@
 # 一起挂上；两个半区同属一个包，靠 package.json 里的 dsh.bundle / dsh.client 声明。
 
 - insert:
-    - id: dsh-continue-button
-      name: 'dsh-continue-button'
+    - id: dsh-editable-send
+      name: 'dsh-editable-send'
       config: {}

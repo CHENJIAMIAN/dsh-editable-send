@@ -1,6 +1,11 @@
 # 发送按钮 · DeepSeek Harness 插件
 
+[English](README.en.md) | 简体中文
+
 输入框右边多一个**可改文本**的按钮：点一下，它上面的字就当一条普通提问发出去。默认是「继续」。
+
+[![npm](https://img.shields.io/npm/v/dsh-editable-send?color=2F6FED)](https://www.npmjs.com/package/dsh-editable-send)
+[![license](https://img.shields.io/npm/l/dsh-editable-send)](LICENSE)
 
 ![输入框右下工具行里的「继续」按钮](docs/images/composer.png)
 
@@ -19,7 +24,7 @@
 
 ![点铅笔就地改文本](docs/images/edit.png)
 
-- 改完的文本存在浏览器 `localStorage`（键 `dsh-continue-button:text`），刷新、重开都还在。
+- 改完的文本存在浏览器 `localStorage`（键 `dsh-editable-send:text`），刷新、重开都还在。
 - 默认值**按界面语言给**：中文界面「继续」，英文界面 `Continue`。改过一次之后不再按语言重置。
 - 上限 120 字；它是个按钮，长文本会省略成 `…`，完整内容在 `title` 里。
 
@@ -45,16 +50,17 @@
 
 ## 装
 
-**从插件市场**：DSH 左侧边栏 → **插件** → **发现** → 找到「发送按钮」→ 安装 → 启用。
-
-**从本地目录**（开发时）：
+已发布到 npm：`dsh-editable-send@1.0.0`。三种装法任选：
 
 ```powershell
-# 让 Agent 装：对当前会话说
-# 「用 plugin_manager 的 install_bundle，把 <这个仓库的绝对路径> 装到当前 profile」
-```
+# 1) 直接装 npm 包（推荐）
+plugin_manager install_bundle --target dsh-editable-send
 
-或者手动：**插件** → **添加插件** → 填这个**目录的绝对路径** → 安装 → 启用。
+# 2) 插件市场里搜「发送按钮」
+
+# 3) 想改代码就装本地目录（会以 link 方式挂上，改完热更新）
+plugin_manager install_bundle --target <这个仓库的绝对路径>
+```
 
 装完**刷新一次页面**（浏览器半区是纯 JS，没有构建步骤）。换新版本后要重启 DSH，Node 的模块缓存换不掉。
 
@@ -96,7 +102,3 @@
 ## License
 
 [MIT](LICENSE)
-
----
-
-[English](README.en.md)

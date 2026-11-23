@@ -1,8 +1,8 @@
 {
-  "name": "dsh-continue-button",
+  "name": "dsh-editable-send",
   "version": "1.0.0",
   "type": "module",
-  "description": "DSH 输入框右边的可编辑发送按钮：点一下就把它的文本发出去，默认「继续」。An editable one-click send button beside the DSH composer, defaulting to 继续.",
+  "description": "在输入框右边加一个文本可编辑的发送按钮，点一下就把按钮上的文本直接发出去，默认「继续」。An editable one-click send button beside the DSH composer, defaulting to 继续.",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -27,7 +27,8 @@
     "deepseek-harness",
     "web-ui",
     "composer",
-    "continue",
+    "send",
+    "editable",
     "quick-send"
   ],
   "author": "CHENJIAMIAN",
@@ -42,11 +43,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CHENJIAMIAN/dsh-continue-button.git"
+    "url": "git+https://github.com/CHENJIAMIAN/dsh-editable-send.git"
   },
-  "homepage": "https://github.com/CHENJIAMIAN/dsh-continue-button#readme",
+  "homepage": "https://github.com/CHENJIAMIAN/dsh-editable-send#readme",
   "bugs": {
-    "url": "https://github.com/CHENJIAMIAN/dsh-continue-button/issues"
+    "url": "https://github.com/CHENJIAMIAN/dsh-editable-send/issues"
   },
   "dsh": {
     "manifestVersion": 1,

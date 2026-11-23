@@ -7,7 +7,7 @@
  */
 
 /** 插件名（诊断日志里显示）。 */
-export const name = 'dsh-continue-button'
+export const name = 'dsh-editable-send'
 
 /** 与 package.json 对齐。 */
 export const VERSION = '1.0.0'
@@ -17,5 +17,5 @@ export const VERSION = '1.0.0'
  * @param ctx - Cordis 上下文。
  */
 export function apply(ctx) {
-  ctx.logger?.('dsh-continue-button')?.info?.('[dsh-continue-button] 宿主半为空壳，界面在浏览器半区')
+  ctx.logger?.('dsh-editable-send')?.info?.('[dsh-editable-send] 宿主半为空壳，界面在浏览器半区')
 }
